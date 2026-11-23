@@ -1,0 +1,1717 @@
+{
+  "info": {
+    "_postman_id": "a9f4341b-b8a4-4122-96de-e3b737a6695d",
+    "name": "clinic",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58471424"
+  },
+  "item": [
+    {
+      "name": "Specialization",
+      "item": [
+        {
+          "name": "New folder",
+          "item": [
+            {
+              "name": "Specialization_assignment",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Update_by_id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "   {\r\n       \"name\": \"Neurology\"\r\n   }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/specializations/5ac1a138-7f87-4b24-8cd9-9289b768950e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "specializations",
+                "5ac1a138-7f87-4b24-8cd9-9289b768950e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read_by_id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/specializations/5ac1a138-7f87-4b24-8cd9-9289b768950e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "specializations",
+                "5ac1a138-7f87-4b24-8cd9-9289b768950e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read_all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/specializations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "specializations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "auth": {
+              "type": "inherit"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "   {\r\n       \"name\": \"Cardiology\"\r\n   }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/specializations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "specializations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete_by_id",
+          "request": {
+            "auth": {
+              "type": "inherit"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/specializations/5ac1a138-7f87-4b24-8cd9-9289b768950e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "specializations",
+                "5ac1a138-7f87-4b24-8cd9-9289b768950e"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Patient",
+      "item": [
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "  {\r\n      \"firstName\": \"Alice\",\r\n      \"lastName\": \"Uwase\",\r\n      \"dateOfBirth\": \"1995-06-14\"\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read_all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_by_id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "  {\r\n      \"firstName\":\"Peace\",\r\n      \"lastName\": \"Mahoro\",\r\n      \"dateOfBirth\": \"1994-06-14\"\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/patients/f022d591-e6fa-4c9c-81fd-270abc0db1dc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients",
+                "f022d591-e6fa-4c9c-81fd-270abc0db1dc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete_by_id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/patients/ea1de208-76f7-4b38-9fe0-e9d0ab754104",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients",
+                "ea1de208-76f7-4b38-9fe0-e9d0ab754104"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read_by_id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/patients/f022d591-e6fa-4c9c-81fd-270abc0db1dc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients",
+                "f022d591-e6fa-4c9c-81fd-270abc0db1dc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "patient_by_lastName",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/patients/by-last-name?lastName=uwase",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients",
+                "by-last-name"
+              ],
+              "query": [
+                {
+                  "key": "lastName",
+                  "value": "uwase"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Adding_patient_ssNumber",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "D2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/patients/1199602100001/upcoming",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients",
+                "1199602100001",
+                "upcoming"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/patients/0000000000000/upcoming",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients",
+                "0000000000000",
+                "upcoming"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Office",
+      "item": [
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Reception\",\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/offices/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "offices",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/offices",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "offices"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_by_id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Reception\",\r\n    \"officeNumber\": 210\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/offices/c16f6dd9-6c90-45fa-9710-36a95acd0f54",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "offices",
+                "c16f6dd9-6c90-45fa-9710-36a95acd0f54"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Doctor",
+      "item": [
+        {
+          "name": "Doctor_Alreadyhas_specialization",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/84d820ba-4e9a-4867-8a8b-f9ca9ec5989a/specializations/35073b9b-8eef-45e6-920c-b1ea363150e4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "84d820ba-4e9a-4867-8a8b-f9ca9ec5989a",
+                "specializations",
+                "35073b9b-8eef-45e6-920c-b1ea363150e4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read_all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstName\": \"Muhizi\",\r\n    \"lastName\": \"Ivan\",\r\n    \"dateOfBirth\": \"1997-04-15\",\r\n    \"office\": {\r\n        \"officeNumber\": 208\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/doctors",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstName\": \"Muhizi\",\r\n    \"lastName\": \"Ivan\",\r\n    \"dateOfBirth\": \"1999-04-15\",\r\n    \"office\": {\r\n        \"officeNumber\": 208\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/8bbb2cde-8556-435a-a8c2-fb8ce0db741a",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "8bbb2cde-8556-435a-a8c2-fb8ce0db741a"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A1",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/84d820ba-4e9a-4867-8a8b-f9ca9ec5989a/specializations/815affd0-f3b6-4e2d-b7ee-899a33653c57",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "84d820ba-4e9a-4867-8a8b-f9ca9ec5989a",
+                "specializations",
+                "815affd0-f3b6-4e2d-b7ee-899a33653c57"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/84d820ba-4e9a-4867-8a8b-f9ca9ec5989a/specializations/815affd0-f3b6-4e2d-b7ee-899a33653c57",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "84d820ba-4e9a-4867-8a8b-f9ca9ec5989a",
+                "specializations",
+                "815affd0-f3b6-4e2d-b7ee-899a33653c57"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "D1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/31daa3dd-16cf-4c08-bef7-645e674dec32/agenda?date=2026-10-20",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "31daa3dd-16cf-4c08-bef7-645e674dec32",
+                "agenda"
+              ],
+              "query": [
+                {
+                  "key": "date",
+                  "value": "2026-10-20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/00000000-0000-0000-0000-000000000099/agenda?date=2026-10-20",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "00000000-0000-0000-0000-000000000099",
+                "agenda"
+              ],
+              "query": [
+                {
+                  "key": "date",
+                  "value": "2026-10-20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "D3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/search?name=mu",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "mu"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Appointment",
+      "item": [
+        {
+          "name": "Post",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"appointmentDate\": \"2026-11-08\",\r\n    \"reason\": \"Missed appointment\",\r\n    \"status\": \"CANCELLED\",\r\n    \"doctor\": {\r\n        \"id\": \"84d820ba-4e9a-4867-8a8b-f9ca9ec5989a\"\r\n    },\r\n    \"patient\": {\r\n        \"id\": \"de50dda3-9296-42bd-9db5-87ddd4ddd737\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"appointmentDate\": \"2026-10-15\",\r\n    \"reason\": \"Routine Checkup\",\r\n    \"status\": \"COMPLETED\",\r\n    \"doctor\": {\r\n        \"id\": \"ec16050b-f0f1-42a7-9f0b-db0923dcc0b7\"\r\n    },\r\n    \"patient\": {\r\n        \"id\": \"269a286f-1ea5-4317-8b12-83d08b2f30cd\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/1b9b2400-67aa-481a-91e9-260805aa55f6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "1b9b2400-67aa-481a-91e9-260805aa55f6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "appointment_by_status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/by-status?status=SCHEDULED",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "by-status"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "SCHEDULED"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "appointment_date_range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/between?start=2026-10-01&end=2026-10-31",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "between"
+              ],
+              "query": [
+                {
+                  "key": "start",
+                  "value": "2026-10-01"
+                },
+                {
+                  "key": "end",
+                  "value": "2026-10-31"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"appointmentDate\": \"2026-10-20\",\r\n    \"reason\": \"Duplicate test\",\r\n    \"doctor\": { \"id\": \"31daa3dd-16cf-4c08-bef7-645e674dec32\" },\r\n    \"patient\": { \"id\": \"2bd3a9d1-6949-491e-97dc-22cff754ab7b\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"appointmentDate\": \"2020-01-01\",\r\n    \"reason\": \"Past date test\",\r\n    \"status\": \"COMPLETED\",\r\n    \"doctor\": { \"id\": \"31daa3dd-16cf-4c08-bef7-645e674dec32\" },\r\n    \"patient\": { \"id\": \"2bd3a9d1-6949-491e-97dc-22cff754ab7b\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"appointmentDate\": \"2026-11-15\",\r\n    \"reason\": \"New booking\",\r\n    \"status\": \"COMPLETED\",\r\n    \"doctor\": { \"id\": \"31daa3dd-16cf-4c08-bef7-645e674dec32\" },\r\n    \"patient\": { \"id\": \"2bd3a9d1-6949-491e-97dc-22cff754ab7b\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/7677864d-e3af-4983-9aa0-3775926f5276",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "7677864d-e3af-4983-9aa0-3775926f5276"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B2",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/d087fd86-4e22-4824-b45d-d5897fb539df/status?status=COMPLETED",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "d087fd86-4e22-4824-b45d-d5897fb539df",
+                "status"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "COMPLETED"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/53940fcb-e21b-420c-ad7c-9ac0e532a89e/status?status=CONFIRMED",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "53940fcb-e21b-420c-ad7c-9ac0e532a89e",
+                "status"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "CONFIRMED"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/0ada8019-ea5e-48d4-8e1a-a75c4164a700/status?status=COMPLETED",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "0ada8019-ea5e-48d4-8e1a-a75c4164a700",
+                "status"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "COMPLETED"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B3",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/a7e4263c-2141-4304-b1fc-60708048c047/reschedule?newDate=2026-12-01",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "a7e4263c-2141-4304-b1fc-60708048c047",
+                "reschedule"
+              ],
+              "query": [
+                {
+                  "key": "newDate",
+                  "value": "2026-12-01"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/7e885e7e-5d4e-42dd-914f-9c4e33b8421e/reschedule?newDate=2020-01-01",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "7e885e7e-5d4e-42dd-914f-9c4e33b8421e",
+                "reschedule"
+              ],
+              "query": [
+                {
+                  "key": "newDate",
+                  "value": "2020-01-01"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/53940fcb-e21b-420c-ad7c-9ac0e532a89e/reschedule?newDate=2026-12-05",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "53940fcb-e21b-420c-ad7c-9ac0e532a89e",
+                "reschedule"
+              ],
+              "query": [
+                {
+                  "key": "newDate",
+                  "value": "2026-12-05"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"medicineName\": \"Amoxicillin\",\r\n    \"dosage\": \"1 tablet, 3 times a day\",\r\n    \"durationDays\": 7\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/save?appointmentId=e8dc6bda-9c9c-453d-8d7a-4536e69ee744",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "save"
+              ],
+              "query": [
+                {
+                  "key": "appointmentId",
+                  "value": "e8dc6bda-9c9c-453d-8d7a-4536e69ee744"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"medicineName\": \"Ibuprofen\",\r\n    \"dosage\": \"1 tablet twice a day\",\r\n    \"durationDays\": 5\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/save?appointmentId=7e885e7e-5d4e-42dd-914f-9c4e33b8421e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "save"
+              ],
+              "query": [
+                {
+                  "key": "appointmentId",
+                  "value": "7e885e7e-5d4e-42dd-914f-9c4e33b8421e"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/appointment/e8dc6bda-9c9c-453d-8d7a-4536e69ee744",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "appointment",
+                "e8dc6bda-9c9c-453d-8d7a-4536e69ee744"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/appointment/00000000-0000-0000-0000-000000000099",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "appointment",
+                "00000000-0000-0000-0000-000000000099"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/patient/1198811300003",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "patient",
+                "1198811300003"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/patient/0000000000000",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "patient",
+                "0000000000000"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C4",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"medicineName\": \"Amoxicillin\",\r\n    \"dosage\": \"1 tablet, 2 times a day\",\r\n    \"durationDays\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/update/fde99436-bad7-46ab-9a84-acd6f6257b34",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "update",
+                "fde99436-bad7-46ab-9a84-acd6f6257b34"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/e8dc6bda-9c9c-453d-8d7a-4536e69ee744",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "e8dc6bda-9c9c-453d-8d7a-4536e69ee744"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/delete/fde99436-bad7-46ab-9a84-acd6f6257b34",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "delete",
+                "fde99436-bad7-46ab-9a84-acd6f6257b34"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/e8dc6bda-9c9c-453d-8d7a-4536e69ee744",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "e8dc6bda-9c9c-453d-8d7a-4536e69ee744"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "JPQl",
+      "item": [
+        {
+          "name": "doctor_by_specialization",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/by-specialization?name=cardiology",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "by-specialization"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "cardiology"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Doctor_without_office",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/without-office",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "without-office"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "unused_specialization",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/specializations/unused",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "specializations",
+                "unused"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "doctor's_patients",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/patients/of-doctor/31daa3dd-16cf-4c08-bef7-645e674dec32",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients",
+                "of-doctor",
+                "31daa3dd-16cf-4c08-bef7-645e674dec32"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "appointment_per_status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/stats/by-status",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "stats",
+                "by-status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "frequency_of_patient",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/patients/frequent?min=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "patients",
+                "frequent"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "doctor_is_absent",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/cancel-day?doctorId=31daa3dd-16cf-4c08-bef7-645e674dec32&date=2026-10-20",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "cancel-day"
+              ],
+              "query": [
+                {
+                  "key": "doctorId",
+                  "value": "31daa3dd-16cf-4c08-bef7-645e674dec32"
+                },
+                {
+                  "key": "date",
+                  "value": "2026-10-20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "busiest_office",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/offices/busiest",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "offices",
+                "busiest"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "appointment_pagination",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/page?page=0&size=5&sort=appointmentDate,desc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "page"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "5"
+                },
+                {
+                  "key": "sort",
+                  "value": "appointmentDate,desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "clean_old_cancellations",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/appointments/cancelled-before?date=2026-10-16",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "appointments",
+                "cancelled-before"
+              ],
+              "query": [
+                {
+                  "key": "date",
+                  "value": "2026-10-16"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/offices/free",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "offices",
+                "free"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A4",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/84d820ba-4e9a-4867-8a8b-f9ca9ec5989a/office?officeNumber=103",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "84d820ba-4e9a-4867-8a8b-f9ca9ec5989a",
+                "office"
+              ],
+              "query": [
+                {
+                  "key": "officeNumber",
+                  "value": "103"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "D4",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/dashboard/summary",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "dashboard",
+                "summary"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bonus_1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/prescriptions/stats/top-medicines",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "prescriptions",
+                "stats",
+                "top-medicines"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bonus_2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/doctors/workload?start=2026-10-01&end=2026-10-31",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "doctors",
+                "workload"
+              ],
+              "query": [
+                {
+                  "key": "start",
+                  "value": "2026-10-01"
+                },
+                {
+                  "key": "end",
+                  "value": "2026-10-31"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
